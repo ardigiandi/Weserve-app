@@ -1,17 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const btndropdown = document.getElementById("btn-dropdown");
-    const dropdownmenu = document.getElementById("dropdown-menu");
+    // Get the toggle button and navbar links
+    const toggleBtn = document.getElementById("toggleBtn");
+    const navbarLinks = document.getElementById("navbarLinks");
 
-    btndropdown.addEventListener("click", function () {
-        dropdownmenu.classList.toggle("hidden");
-    });
-
-    document.addEventListener("click", function (event) {
-        if (
-        !btndropdown.contains(event.target) &&
-        !dropdownmenu.contains(event.target)
-        ) {
-        dropdownmenu.classList.add("hidden");
-        }
+    // Add click event listener to the toggle button
+    toggleBtn.addEventListener("click", function () {
+        // Toggle the 'hidden' class on navbar links
+        navbarLinks.classList.toggle("hidden");
     });
 });
