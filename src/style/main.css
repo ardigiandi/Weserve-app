@@ -568,6 +568,10 @@ html{
   grid-column: span 6 / span 6;
 }
 
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -857,6 +861,11 @@ html{
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.bg-hitam {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 12 46 / var(--tw-bg-opacity));
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -943,6 +952,11 @@ html{
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -1074,6 +1088,10 @@ html{
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1084,6 +1102,10 @@ html{
 
   .lg\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .lg\:mt-7 {
+    margin-top: 1.75rem;
   }
 
   .lg\:flex {
@@ -1119,6 +1141,11 @@ html{
   .lg\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:text-left {
